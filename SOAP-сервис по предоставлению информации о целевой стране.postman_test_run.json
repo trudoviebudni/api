@@ -1,0 +1,858 @@
+{
+	"id": "2c4f207c-260a-4b3d-aad6-05637aed9233",
+	"name": "SOAP-сервис по предоставлению информации о целевой стране",
+	"timestamp": "2024-05-21T10:55:08.691Z",
+	"collection_id": "35064756-b4fc7d47-24b4-4b74-9dac-6010d748bced",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 53,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-05-21T10:55:04.525Z",
+	"totalFail": 3,
+	"results": [
+		{
+			"id": "9a044ffc-bd0e-4878-8e4a-b0c10f8c6c7b",
+			"name": "Получение списка по валидной ссылке",
+			"url": "http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL",
+			"time": 123,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 500ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				123
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 500ms": true
+				}
+			]
+		},
+		{
+			"id": "549c4100-475b-49d1-a880-2b3d0ca0c4f2",
+			"name": "Получение списка по отсутствующей ссылке",
+			"url": "http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL",
+			"time": 65,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {
+				"Status code is 500": true,
+				"Response time is less than 500ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 500": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				65
+			],
+			"allTests": [
+				{
+					"Status code is 500": true,
+					"Response time is less than 500ms": true
+				}
+			]
+		},
+		{
+			"id": "336bfee8-f12e-4b02-8200-aafedb0d1669",
+			"name": "Получение списка по валидной ссылке",
+			"url": "http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL",
+			"time": 141,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 500ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				141
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 500ms": true
+				}
+			]
+		},
+		{
+			"id": "99813438-e879-44ff-8a0f-341890ce57c2",
+			"name": "Получение списка по валидной ссылке",
+			"url": "http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL",
+			"time": 140,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 500ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				140
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 500ms": true
+				}
+			]
+		},
+		{
+			"id": "7eb0e61e-eb6b-4afd-bbe8-b1c1b6f6d6eb",
+			"name": "Получение названия по ISO-коду A-3",
+			"url": "http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL",
+			"time": 67,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 500ms": true,
+				"Проверка значения <m:CountryNameResult>": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Проверка значения <m:CountryNameResult>": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				67
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 500ms": true,
+					"Проверка значения <m:CountryNameResult>": true
+				}
+			]
+		},
+		{
+			"id": "92032a58-f923-4789-9dde-a8f3698a29c4",
+			"name": "Получение названия по ISO-коду A-2",
+			"url": "http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL",
+			"time": 64,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 500ms": true,
+				"Проверка значения <m:CountryNameResult>": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Проверка значения <m:CountryNameResult>": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				64
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 500ms": true,
+					"Проверка значения <m:CountryNameResult>": true
+				}
+			]
+		},
+		{
+			"id": "b0359721-c098-4ff4-9cd3-4196f1fb191e",
+			"name": "Получение названия по ISO-коду Num",
+			"url": "http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL",
+			"time": 63,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 500ms": true,
+				"Проверка значения <m:CountryNameResult>": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Проверка значения <m:CountryNameResult>": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				63
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 500ms": true,
+					"Проверка значения <m:CountryNameResult>": true
+				}
+			]
+		},
+		{
+			"id": "64d7452f-8415-4325-b3fb-5bb9053bb379",
+			"name": "Получение названия по ISO-коду в нижнем регистре",
+			"url": "http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL",
+			"time": 64,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 500ms": true,
+				"Проверка значения <m:CountryNameResult>": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Проверка значения <m:CountryNameResult>": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				64
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 500ms": true,
+					"Проверка значения <m:CountryNameResult>": true
+				}
+			]
+		},
+		{
+			"id": "3b25fc3a-d867-4390-9d3d-6369b8388ab6",
+			"name": "Получение ISO-кода вводом Russia",
+			"url": "http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL",
+			"time": 64,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 500ms": true,
+				"Проверка значения <m:CountryISOCodeResult>": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Проверка значения <m:CountryISOCodeResult>": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				64
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 500ms": true,
+					"Проверка значения <m:CountryISOCodeResult>": true
+				}
+			]
+		},
+		{
+			"id": "c0cdc225-f381-43b5-8a57-d880c8f9698d",
+			"name": "Получение ISO-кода вводом Russian",
+			"url": "http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL",
+			"time": 63,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 500ms": true,
+				"Проверка значения <m:CountryISOCodeResult>": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Проверка значения <m:CountryISOCodeResult>": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				63
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 500ms": true,
+					"Проверка значения <m:CountryISOCodeResult>": true
+				}
+			]
+		},
+		{
+			"id": "8b601e9d-8952-41ce-81ac-b3efeebf7701",
+			"name": "Получение ISO-кода вводом Russian Federation",
+			"url": "http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL",
+			"time": 70,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 500ms": true,
+				"Проверка значения <m:CountryISOCodeResult>": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Проверка значения <m:CountryISOCodeResult>": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				70
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 500ms": true,
+					"Проверка значения <m:CountryISOCodeResult>": true
+				}
+			]
+		},
+		{
+			"id": "525366a8-cad2-4490-9a29-1e707bd3fb55",
+			"name": "Получение ISO-кода вводом russian federation",
+			"url": "http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL",
+			"time": 63,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 500ms": true,
+				"Проверка значения <m:CountryISOCodeResult>": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Проверка значения <m:CountryISOCodeResult>": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				63
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 500ms": true,
+					"Проверка значения <m:CountryISOCodeResult>": false
+				}
+			]
+		},
+		{
+			"id": "4899eca3-b22c-4228-81ec-a376c76a52cc",
+			"name": "Получение информации по ISO-коду A-3",
+			"url": "http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL",
+			"time": 64,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 500ms": true,
+				"Проверка значения <m:sName>": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Проверка значения <m:sName>": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				64
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 500ms": true,
+					"Проверка значения <m:sName>": true
+				}
+			]
+		},
+		{
+			"id": "43a21a2e-a66a-4aaf-875d-fd399fec9068",
+			"name": "Получение информации по ISO-коду A-2",
+			"url": "http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL",
+			"time": 68,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 500ms": true,
+				"Проверка значения <m:sName>": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Проверка значения <m:sName>": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				68
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 500ms": true,
+					"Проверка значения <m:sName>": true
+				}
+			]
+		},
+		{
+			"id": "7f4bf788-54a1-429c-b889-7cdc3c509ac8",
+			"name": "Получение информации по ISO-коду Num",
+			"url": "http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL",
+			"time": 67,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 500ms": true,
+				"Проверка значения <m:sName>": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Проверка значения <m:sName>": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				67
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 500ms": true,
+					"Проверка значения <m:sName>": true
+				}
+			]
+		},
+		{
+			"id": "0dd1caf4-763c-49fa-905f-b0d98ef4e248",
+			"name": "Получение информации по названию страны",
+			"url": "http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL",
+			"time": 67,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 500ms": true,
+				"Проверка значения <m:sName>": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Проверка значения <m:sName>": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				67
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 500ms": true,
+					"Проверка значения <m:sName>": true
+				}
+			]
+		},
+		{
+			"id": "f3284eee-5b40-4a72-9a59-c0799fac9a90",
+			"name": "Получение информации по ISO-коду A-3",
+			"url": "http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL",
+			"time": 69,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 500ms": true,
+				"Проверка значения <m:LanguageNameResult>": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Проверка значения <m:LanguageNameResult>": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				69
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 500ms": true,
+					"Проверка значения <m:LanguageNameResult>": true
+				}
+			]
+		},
+		{
+			"id": "fc75d169-c1c8-4843-9d02-971f93ce8c03",
+			"name": "Получение информации по ISO-коду A-2",
+			"url": "http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL",
+			"time": 63,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 500ms": true,
+				"Проверка значения <m:LanguageNameResult>": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Проверка значения <m:LanguageNameResult>": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				63
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 500ms": true,
+					"Проверка значения <m:LanguageNameResult>": false
+				}
+			]
+		},
+		{
+			"id": "8611b587-5e59-4d8f-b87c-d58e7bc370ee",
+			"name": "Получение информации по ISO-коду Num",
+			"url": "http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL",
+			"time": 67,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 500ms": true,
+				"Проверка значения <m:LanguageNameResult>": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Проверка значения <m:LanguageNameResult>": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				67
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 500ms": true,
+					"Проверка значения <m:LanguageNameResult>": true
+				}
+			]
+		},
+		{
+			"id": "85ec6c52-7ff0-45cf-80a1-8b64bab7440e",
+			"name": "Получение информации по названию страны",
+			"url": "http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL",
+			"time": 63,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 500ms": true,
+				"Проверка значения <m:LanguageNameResult>": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Проверка значения <m:LanguageNameResult>": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				63
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 500ms": true,
+					"Проверка значения <m:LanguageNameResult>": false
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 1515,
+	"collection": {
+		"requests": [
+			{
+				"id": "9a044ffc-bd0e-4878-8e4a-b0c10f8c6c7b",
+				"method": "POST"
+			},
+			{
+				"id": "549c4100-475b-49d1-a880-2b3d0ca0c4f2",
+				"method": "POST"
+			},
+			{
+				"id": "336bfee8-f12e-4b02-8200-aafedb0d1669",
+				"method": "POST"
+			},
+			{
+				"id": "99813438-e879-44ff-8a0f-341890ce57c2",
+				"method": "POST"
+			},
+			{
+				"id": "7eb0e61e-eb6b-4afd-bbe8-b1c1b6f6d6eb",
+				"method": "POST"
+			},
+			{
+				"id": "92032a58-f923-4789-9dde-a8f3698a29c4",
+				"method": "POST"
+			},
+			{
+				"id": "b0359721-c098-4ff4-9cd3-4196f1fb191e",
+				"method": "POST"
+			},
+			{
+				"id": "64d7452f-8415-4325-b3fb-5bb9053bb379",
+				"method": "POST"
+			},
+			{
+				"id": "3b25fc3a-d867-4390-9d3d-6369b8388ab6",
+				"method": "POST"
+			},
+			{
+				"id": "c0cdc225-f381-43b5-8a57-d880c8f9698d",
+				"method": "POST"
+			},
+			{
+				"id": "8b601e9d-8952-41ce-81ac-b3efeebf7701",
+				"method": "POST"
+			},
+			{
+				"id": "525366a8-cad2-4490-9a29-1e707bd3fb55",
+				"method": "POST"
+			},
+			{
+				"id": "4899eca3-b22c-4228-81ec-a376c76a52cc",
+				"method": "POST"
+			},
+			{
+				"id": "43a21a2e-a66a-4aaf-875d-fd399fec9068",
+				"method": "POST"
+			},
+			{
+				"id": "7f4bf788-54a1-429c-b889-7cdc3c509ac8",
+				"method": "POST"
+			},
+			{
+				"id": "0dd1caf4-763c-49fa-905f-b0d98ef4e248",
+				"method": "POST"
+			},
+			{
+				"id": "f3284eee-5b40-4a72-9a59-c0799fac9a90",
+				"method": "POST"
+			},
+			{
+				"id": "fc75d169-c1c8-4843-9d02-971f93ce8c03",
+				"method": "POST"
+			},
+			{
+				"id": "8611b587-5e59-4d8f-b87c-d58e7bc370ee",
+				"method": "POST"
+			},
+			{
+				"id": "85ec6c52-7ff0-45cf-80a1-8b64bab7440e",
+				"method": "POST"
+			}
+		]
+	}
+}
